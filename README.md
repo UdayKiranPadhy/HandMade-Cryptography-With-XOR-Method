@@ -1,20 +1,31 @@
-# HandMade-Cryptography-With-XOR-Method
+# HandMade Cryptography With XOR Method
 This is a self made cryptograph using XOR method.
+While making a website with login system , i had to store the login credentials in hashed format so that only the owner can decrypt it and no one else can . For that purpose i used AES or SHA256 Algorithm , i don't remember which one exactly was it.
+Later I thought why should I depend on External Libraries for it and made a copy of that encryption JS file and used it. 
+After Completions of project i felt like both will yeild the same result just the source of the file is changed, and decided to make my own Cryptography method.
+At the initial stages i saw their code how are they managing to do that , but i couldn't not even get a single piece out of it.
+Then during class i got the idea of converting the characters into its ASCII numerical format and apply XOR Method with its Key as every character will have different ASCII numerical associated to it and therefore the result obtained will be different.
+And before moving one If in case You want to develop or improve this feel free fork this and Submit a Pull Request , And if Are facing any problems Please place it in Issues Tab of this repo with some screenshots of the problem so that i can work on it.
+<br>
+<hr>
 
-```ord``` function is to convert a character to its equivalent integer representation.
+Theory:-
+```ord``` function is to convert a character to its equivalent integer representation.<br>
 ```chr``` function is to convert the integer to its character representation.
 
-random.choice() method randomly picks a character from a series of characters to form a string of N length, this is the key for encryption and decryption.
+```random.choice()``` method randomly picks a character from a series of characters to form a string of N length, this is the key for encryption and decryption.
 
 A message is taken from user’s input, for each character in a message it is mapped together with a character of a key with the zip function.
 The zip object is a collection of a message’s character and key’s character pair, each pair is exclusively ORed and form a string.
 
-itertools.cycle() method is to cycle through the key string, hence there is no need to check the length of the key string.
+```itertools.cycle()``` method is to cycle through the key string, hence there is no need to check the length of the key string.
 
-Without itertools.cycle() the key string length has to be more than or equal to the message otherwise the message will not be fully encrypted causing a lost of original message.
+Without ```itertools.cycle()``` the key string length has to be more than or equal to the message otherwise the message will not be fully encrypted causing a lost of original message.
+<br>
+<hr>
 
+Implementation:-
 This is a simple demonstration if the key string length is shorter than the message length.
-
 ```
 key = "secretkey"
 message = "this is my message, see if it can be encrypted completely."
@@ -26,9 +37,10 @@ print(plain_text)
 ```
 
 The result is like this
+![pic1](https://user-images.githubusercontent.com/58071209/99350938-8762ce80-28c5-11eb-9dec-7d2a8807271a.png)
 
 
-With itertools.cycle the characters of the key string will be re-cycled until the entire message is completed.
+With ```itertools.cycle``` the characters of the key string will be re-cycled until the entire message is completed.
 
 
 ```
@@ -44,8 +56,7 @@ print(plain_text)
 ```
 
 The result is the entire message is encrypted and preserved after decryption.
-
-
+![pic2](https://user-images.githubusercontent.com/58071209/99351022-b11bf580-28c5-11eb-9bb1-f2e851c8b6b9.png)
 
 
 Package of all the functions to encrypt and decrypt message.
@@ -153,8 +164,7 @@ else:
 ```
 
 So here is the result, as there is no key yet, a key is created on the first run.
-
-
+![result](https://user-images.githubusercontent.com/58071209/99351076-cbee6a00-28c5-11eb-9ac5-f479680c2866.png)
 
 
 The secret key string is this 
@@ -162,4 +172,8 @@ NRkjYdXVhoXfommw72dgEPd6SBrtalrtPCKitoz5Gw6uGJNVa2oCRQVaZo3a5UjO83MgcCkiXVbImr48
 which is 1024 characters Long.
 
 On the second run a prompt appears to get the message input from user then it encrypts and decrypts with the key file.
+![finally](https://user-images.githubusercontent.com/58071209/99351108-e0326700-28c5-11eb-8ac0-305f3261f321.png)
 
+If you want to run this in your local machine 
+1)Install Python 3.x (x here is version) and download this repo into your local machine.
+2)Extract the files if its in a zip format, 
