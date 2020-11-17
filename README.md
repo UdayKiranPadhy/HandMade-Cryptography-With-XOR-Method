@@ -1,11 +1,11 @@
 # HandMade Cryptography With XOR Method
-This is a self made cryptograph using XOR method.
-While making a website with login system , i had to store the login credentials in hashed format so that only the owner can decrypt it and no one else can . For that purpose i used AES or SHA256 Algorithm , i don't remember which one exactly was it.
-Later I thought why should I depend on External Libraries for it and made a copy of that encryption JS file and used it. 
-After Completions of project i felt like both will yeild the same result just the source of the file is changed, and decided to make my own Cryptography method.
-At the initial stages i saw their code how are they managing to do that , but i couldn't not even get a single piece out of it.
-Then during class i got the idea of converting the characters into its ASCII numerical format and apply XOR Method with its Key as every character will have different ASCII numerical associated to it and therefore the result obtained will be different.
-And before moving one If in case You want to develop or improve this feel free fork this and Submit a Pull Request , And if Are facing any problems Please place it in Issues Tab of this repo with some screenshots of the problem so that i can work on it.
+This is a self made cryptograph using XOR method.<br>
+While making a website with login system , i had to store the login credentials in hashed format so that only the owner can decrypt it and no one else can . For that purpose i used AES or SHA256 Algorithm , i don't remember which one exactly was it.<br>
+Later I thought why should I depend on External Libraries for it and made a copy of that encryption JS file and used it.<br> 
+After Completions of project i felt like both will yeild the same result just the source of the file is changed, and decided to make my own Cryptography method.<br>
+At the initial stages i saw their code how are they managing to do that , but i couldn't not even get a single piece out of it.<br>
+Then during class i got the idea of converting the characters into its ASCII numerical format and apply XOR Method with its Key as every character will have different ASCII numerical associated to it and therefore the result obtained will be different.<br>
+And before moving one If in case You want to develop or improve this feel free fork this and Submit a Pull Request , And if Are facing any problems Please place it in Issues Tab of this repo with some screenshots of the problem so that i can work on it.<br>
 <br>
 <hr>
 
