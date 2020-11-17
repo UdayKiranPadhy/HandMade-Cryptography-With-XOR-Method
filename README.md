@@ -174,6 +174,6 @@ which is 1024 characters Long.
 On the second run a prompt appears to get the message input from user then it encrypts and decrypts with the key file.
 ![finally](https://user-images.githubusercontent.com/58071209/99351108-e0326700-28c5-11eb-8ac0-305f3261f321.png)
 
-If you want to run this in your local machine 
-1)Install Python 3.x (x here is version) and download this repo into your local machine.
-2)Extract the files if its in a zip format, 
+If you want to run this in your local machine <br>
+1)Install Python 3.x (x here is version) and download this repo into your local machine.<br>
+2)Extract the files if its in a zip format, open your terminal or command prompt in that workspace and run ```python main.py``` for the outputs of the above images.<br>
